@@ -1,1 +1,114 @@
 /*Schrijf hier jouw css*/
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*////////////////////////////////////////////////////////////////////////
+Table of Contents:
+    1. Global Styles
+    2. Typografie
+    3. Areas
+        3.1 NAV
+        3.2 MAIN
+        3.3 SOLUTIONS
+
+////////////////////////////////////////////////////////////////////////*/
+
+
+/*////////////////////////
+    1. Global Styles
+////////////////////////*/
+/*vaag blauw = 151E3F = rgb(21,30,63)
+donker blauw = 030027 = rgb(3,0,39)
+beige = F2F3D9 =rgb(242,243,217)
+donder beige = DC9E82 = rgb(220,158,130)
+rose = rgb(193,110,112)*/
+
+/* @PEER REVIEWER: ik ben me er bewust van dat het niet helemaal klopt nog
+er is een overflow tussen inner-coll-1 en inner-coll-2. Ook in de navbar
+is er overflow, maar ik weet niet wat ik hier verkeerd doe. Verder
+gebruik ik de width en margin properties waar het misschien niet
+de bedoeling is*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*////////////////////////
+    2. Typography
+////////////////////////*/
+
+.flex-container {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*////////////////////////
+    3. Areas
+////////////////////////*/
+
+/*////////////////////////
+    3.1. NAV
+////////////////////////*/
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 40px;
+    height: 75px;
+    background-color: rgb(3,0,39);
+    color: white;
+}
+.ul-links {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    text-decoration: none;
+    gap: 4rem;
+}
+.li-items {
+    text-decoration: none;
+    color: white;
+}
+/*///////////// 3.2 MAIN /////////////*/
+.outer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+    background-color: rgb(242,243,217);
+}
+
+.inner-col-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align-last: center;
+    height: 200px;
+    padding: 40px 40px 0 40px;
+    max-width: 1000px;
+}
+.inner-col-2 {
+    display: flex;
+    max-height: 350px;
+    overflow: hidden;
+}
+/*///////////// 3.3 Solutions /////////////*/
+.solutions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    max-width: 280px;
+    min-height: 350px;
+    background-color: rgb(193,110,112);
+    text-align-last: center;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 0 20px 0 20px;
+    flex-grow:0;
+    flex-shrink: 1;
+}
