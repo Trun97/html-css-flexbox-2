@@ -1,1 +1,58 @@
-/*Schrijf hier jouw CSS*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    border: 2px solid black;
+    min-height: 100vh;
+}
+.outer-col-1 {
+    border: 2px solid red;
+    flex-basis: 20%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.outer-col-2 {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid yellow;
+    flex-basis: 80%;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.inner-row {
+    display: flex;
+    border: 2px solid green;
+    flex-basis: 85%;
+    overflow: hidden;
+}
+.inner-col {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    flex-basis: 80%;
+}
+.outer-col-2 header {
+    flex-basis: 15%;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.inner-col article {
+    flex-basis: 75%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: auto;
+}
+.inner-col footer {
+    flex-basis:25%;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.inner-row aside {
+    flex-basis: 20%;
+    flex-shrink: 0;
+    flex-grow: 0;
+}/*Schrijf hier jouw CSS*/

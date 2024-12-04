@@ -1,1 +1,49 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    border: 3px solid black;
+}
+
+.nav{
+    display: flex;
+    flex-basis: 20%;
+    border: 3px solid red;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.div {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid greenyellow;
+    flex-basis: 100%;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+main {
+    display: flex;
+    border: 3px solid yellow;
+    flex-basis: 100%;
+
+}
+header, footer {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 15%
+}
+article {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+aside {
+    display: flex;
+    flex-basis: 33.33%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
 /*Schrijf hier jouw CSS*/
